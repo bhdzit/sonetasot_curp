@@ -1,0 +1,59 @@
+version: "3.8"
+
+# Servidor nginx
+services:
+  api:
+    container_name: api
+    image: nginx:alpine
+    ports:
+      - "81:80"
+    volumes:
+      - ./sonetasot-back/:/var/www/html
+      - ./nginx/default.conf:/etc/nginx/conf.d/default.conf
+    depends_on:
+      - php-fpm
+
+  # Configuración de php-fpm
+  php-fpm:
+    container_name: back_end
+    restart: unless-stopped
+    depends_on:
+      db:
+        condition: service_healthy
+    build:
+      context: sonetasot-back
+      dockerfile: Dockerfile
+
+    
+  db:
+    container_name: db
+    image: mysql:8.0
+    restart: unless-stopped
+    environment:
+      MYSQL_DATABASE: demo
+      MYSQL_ROOT_PASSWORD: Hola12345.
+      MYSQL_PASSWORD: Hola12345.
+      MYSQL_USER: Hola12345.
+      SERVICE_TAGS: dev
+      SERVICE_NAME: mysql
+    expose:
+      - 3306
+    healthcheck:
+      test: ["CMD", "mysqladmin" ,"ping", "-h", "localhost"]
+      interval: 20s
+      timeout: 10s
+      retries: 5
+    ports:
+      - '3306:3306'
+
+  angular-service:
+       container_name: cliente
+       build: 
+          context: frontend
+          dockerfile: Dockerfile
+       ports:
+           - "82:82"
+       volumes:
+          - ./nginx/nginx.conf:/etc/nginx/nginx.conf
+
+
