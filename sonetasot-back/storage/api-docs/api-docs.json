@@ -1,0 +1,199 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "API Usuarios",
+        "version": "1.0"
+    },
+    "paths": {
+        "/api/getAllCURPS": {
+            "get": {
+                "summary": "Muestra todos los Curps registrados ",
+                "operationId": "c076cbf42fcdafcd045df674fb9e3847",
+                "responses": {
+                    "200": {
+                        "description": "Muestra todos los Curps registrados."
+                    },
+                    "500": {
+                        "description": "Ha ocurrido un error."
+                    }
+                }
+            }
+        },
+        "/api/createCurp": {
+            "post": {
+                "summary": "Agrega Crups",
+                "operationId": "cd821b3c92eb2911f7d8b027468ab850",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "properties": {
+                                    "nombre": {
+                                        "type": "string"
+                                    },
+                                    "apellido_p": {
+                                        "type": "string"
+                                    },
+                                    "apellido_m": {
+                                        "type": "string"
+                                    },
+                                    "fecha_nacimiento": {
+                                        "type": "string"
+                                    },
+                                    "sexo": {
+                                        "type": "string"
+                                    },
+                                    "estado": {
+                                        "type": "string"
+                                    },
+                                    "curp": {
+                                        "type": "string"
+                                    }
+                                },
+                                "type": "object",
+                                "example": {
+                                    "nombre": "Bryan Eliut",
+                                    "apellido_p": "Hernandez",
+                                    "apellido_m": "Moran",
+                                    "fecha_nacimiento": "1997-09-04",
+                                    "sexo": "H",
+                                    "estado": "HG",
+                                    "curp": "HEMB970904HHGRRR00"
+                                }
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "El Curp se agrego con exito."
+                    },
+                    "406": {
+                        "description": "El request es invalido"
+                    },
+                    "500": {
+                        "description": "Ha ocurrido un error."
+                    }
+                }
+            }
+        },
+        "/api/updateCurp": {
+            "put": {
+                "summary": "Actualiza los datos del Crup",
+                "operationId": "6617d2ba3ffc8a351f07a14de79d81ce",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "properties": {
+                                    "id": {
+                                        "type": "integer"
+                                    },
+                                    "nombre": {
+                                        "type": "string"
+                                    },
+                                    "apellido_p": {
+                                        "type": "string"
+                                    },
+                                    "apellido_m": {
+                                        "type": "string"
+                                    },
+                                    "fecha_nacimiento": {
+                                        "type": "string"
+                                    },
+                                    "sexo": {
+                                        "type": "string"
+                                    },
+                                    "estado": {
+                                        "type": "string"
+                                    },
+                                    "curp": {
+                                        "type": "string"
+                                    }
+                                },
+                                "type": "object",
+                                "example": {
+                                    "id": 1,
+                                    "nombre": "Bryan Eliud",
+                                    "apellido_p": "Hernandez",
+                                    "apellido_m": "Moran",
+                                    "fecha_nacimiento": "1997-09-04",
+                                    "sexo": "H",
+                                    "estado": "HG",
+                                    "curp": "HEMB970904HHGRRR00"
+                                }
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "El Curp se agrego con exito."
+                    },
+                    "406": {
+                        "description": "El request es invalido"
+                    },
+                    "500": {
+                        "description": "Ha ocurrido un error."
+                    }
+                }
+            }
+        },
+        "/api/getCurp/{curp}": {
+            "get": {
+                "summary": "Obtiene datos de la persona al que tiene asociado un curp",
+                "operationId": "fe82ae69f2ca996127a704b1e33d3210",
+                "parameters": [
+                    {
+                        "name": "curp",
+                        "in": "path",
+                        "description": "Obtiene datos de la persona al que tiene asociado un curp",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        },
+                        "examples": {
+                            "HEMB970904HHGRRR00": {
+                                "summary": "Curp de la persona",
+                                "value": "HEMB970904HHGRRR00"
+                            }
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK"
+                    }
+                }
+            }
+        },
+        "/api/deleteCurp/{curp}": {
+            "delete": {
+                "summary": "Updates a user",
+                "operationId": "40e2400087d52384d80e2e86a0b1b1d4",
+                "parameters": [
+                    {
+                        "name": "curp",
+                        "in": "path",
+                        "description": "Elimina el curp",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        },
+                        "examples": {
+                            "HEMB970904HHGRRR00": {
+                                "summary": "Curp de la persona",
+                                "value": "HEMB970904HHGRRR00"
+                            }
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK"
+                    }
+                }
+            }
+        }
+    }
+}

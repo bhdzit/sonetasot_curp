@@ -1,0 +1,89 @@
+.container {
+    height: 80vh;
+    max-width: unset;
+}
+
+.registro-content {
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+.titulo {
+    font: normal normal bold 25px Nutmeg-bold;
+    letter-spacing: 0px;
+    color: #015DB1;
+}
+
+
+.badge {
+    border-radius: 50%;
+    padding-right: 9px;
+    margin-right: 8px;
+}
+
+.nutmeg-bold-20 {
+    font: normal normal bold 13px Nutmeg-bold;
+}
+
+.campania-card label {
+    display: block;
+    margin-left: 20px;
+}
+
+.campania-card img {
+    width: 60px;
+}
+
+
+.ico-cancel-content {
+    background: #B10108;
+    border-radius: 10px;
+    padding-left: 10px;
+    font: normal normal 16px Nutmeg-regular;
+    color: white;
+    width: fit-content;
+    height: fit-content;
+}
+
+.ico-cancel-content img {
+    margin-right: 5px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+
+.card {
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border-color: #e7e7e7;
+    box-shadow: 0px 3px 6px #d9d9d9;
+    border-radius: 25px;
+}
+
+.curp-data {
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+.curp-data label {
+    padding-right: 10px;
+    display: block;
+}
+
+.modulo-content {
+    margin-top: 60px;
+    margin-left: 15px;
+    margin-bottom: 50px;
+}
+
+.modulo-content label {
+    margin-top: 10px;
+    display: block;
+}
+
+.modulo-fecha {
+    margin-top: 10px;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}

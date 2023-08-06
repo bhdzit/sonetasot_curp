@@ -1,0 +1,119 @@
+.container {
+    height: 80vh;
+    max-width: unset;
+    background: linear-gradient(to bottom, #676D72 70%, #00326C 30%);
+    opacity: 1;
+}
+
+.left-row-img {
+    height: 30vh;
+    width: auto;
+    position: absolute;
+    left: -4.5vw;
+    top: 16vh;
+}
+
+.rigth-row-img {
+    height: 32vh;
+    width: auto;
+    margin: unset;
+    position: fixed;
+    right: -4.7vw;
+    top: 50vh;
+}
+.back-puntos-img{
+    height: 10vh;
+    width: auto;
+    margin: unset;
+    position: fixed;
+    left: 16vw;
+    bottom: 18%;
+}
+
+.tel-img-content{
+    width: 120px;
+    padding-left: 10px;
+    border-radius: 20px;
+    font: normal normal  12px Nutmeg-regular;
+    position: absolute;
+    right: 14%;
+    top: 12%;
+    color: white;
+}
+.tel-img-content img{
+    height: 25px;
+    margin-right: 5px;
+    padding-bottom: 5px;
+    padding-top: 2px;
+}
+
+.curp-search-content {
+    margin-left: 23%;
+    margin-right: 23%;
+    padding-left: 5%;
+    padding-right: 5%;
+    height: 95%;
+    border-top: unset;
+    border-top-left-radius: unset;
+    border-top-right-radius: unset;
+}
+
+.titulo {
+    font: normal normal 900 25px Nutmeg;
+    letter-spacing: 0px;
+    color: #015DB1;
+    opacity: 1;
+}
+
+.card img {
+    width: 28%;
+}
+
+.round {
+    background: #37AEFE;
+    width: 15px;
+    height: auto;
+    text-align: center;
+    display: inline-block;
+    border-radius: 100%;
+    color: white;
+    font: normal normal bold 10px Nutmeg;
+}
+
+.personas-card {
+    height: 100%;
+    padding-left: 15px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border-color: #e7e7e7;
+    box-shadow: 0px 3px 12px white;
+    border-radius: 25px;
+    border-top: unset;
+    margin-bottom: 15px;
+    padding-top: 20px;
+}
+
+.input-content{
+    position: relative;
+}
+
+.input-content input {
+    height: 38px;
+    width: 100%;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 0px 5px #8D8A7D98;
+    border: 0.5px solid #EAEDEF;
+    border-radius: 4px;
+    padding-left: 40px;    
+}
+
+.input-content input:focus-visible {
+    outline: unset;
+}
+
+.input-content img{
+    display: block;
+    position: absolute;
+    height: 15px;
+    top: 25%;
+    transform: translateX(-25px);
+}

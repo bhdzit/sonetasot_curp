@@ -1,0 +1,25 @@
+.header,
+.footer {
+    height: 10vh;
+    margin-left: unset;
+    margin-right: unset;
+}
+
+.header img,
+.footer img {
+
+    height: 8vh;
+}
+
+label {
+    text-align: left;
+    font: normal normal bold 11px Nutmeg-bold;
+    letter-spacing: 0px;
+    color: #37AEFD;
+    opacity: 1;
+}
+label img{
+    height: 14px !important;
+}
+
+

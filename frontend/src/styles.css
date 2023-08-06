@@ -1,0 +1,99 @@
+/* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: 'Nutmeg-book';
+    src: local('Nutmeg Book'), local('Nutmeg-Book'),
+        url('assets/fonts/Nutmeg-Book.woff2') format('woff2'),
+        url('assets/fonts/Nutmeg-Book.woff') format('woff'),
+        url('assets/fonts/Nutmeg-Book.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Nutmeg-bold';
+    src: local('Nutmeg Book'), local('Nutmeg-Book'),
+        url('assets/fonts/Nutmeg-Bold.woff2') format('woff2'),
+        url('assets/fonts/Nutmeg-Bold.woff') format('woff'),
+        url('assets/fonts/Nutmeg-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Nutmeg-regular';
+    src: local('Nutmeg Book'), local('Nutmeg-regular'),
+        url('assets/fonts/Nutmeg-Regular.woff2') format('woff2'),
+        url('assets/fonts/Nutmeg-Regular.woff') format('woff'),
+        url('assets/fonts/Nutmeg-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Nutmeg';
+    src: local('Nutmeg Book'), local('Nutmeg-Book'),
+        url('assets/fonts/Nutmeg-Black.woff2') format('woff2'),
+        url('assets/fonts/Nutmeg-Black.woff') format('woff'),
+        url('assets/fonts/Nutmeg-Black.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+.color-uno {
+    color: #00326C;
+}
+
+.color-dos {
+    color: #37AEFE;
+}
+
+.color-tres {
+    color: #FF6C00;
+}
+
+.color-cuatro {
+    color: #676D72;
+}
+
+.bg-uno {
+    background: #015DB1 !important;
+}
+.bg-dos {
+    background: #37AEFE !important;
+}
+.bg-tres {
+    background: #199627 !important;
+}
+
+.nutmeg-black-13 {
+    font: normal normal bold 13px Nutmeg;
+}
+.nutmeg-book-13 {
+    font: normal normal  13px Nutmeg-book;
+}
+.nutmeg-book-bold-13 {
+    font: normal normal bold 13px Nutmeg-book;
+}
+
+.nutmeg-black-italic-18 {
+    font: italic normal bold 13px Nutmeg;
+}
+
+.nutmeg-bold-16 {
+    font: normal normal bold 11px Nutmeg-bold;
+}
+
+.nutmeg-bold-25 {
+    font: normal normal bold 25px Nutmeg-bold;
+}
+
+.nutmeg-regular-15 {
+    font: normal normal 15px Nutmeg-regular;
+}
+
+.nutmeg-regular-13 {
+    font: normal normal 13px Nutmeg-regular;
+}
+
+.nutmeg-regular-italic-25 {
+    font: italic normal 18px Nutmeg-regular;
+}
